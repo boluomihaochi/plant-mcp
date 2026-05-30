@@ -478,4 +478,4 @@ async def my_garden() -> str:
 
 if __name__ == "__main__":
     init_db()
-mcp.run(transport="sse")
+mcp.run(transport="sse", host="0.0.0.0", port=8000)
