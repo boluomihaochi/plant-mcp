@@ -27,7 +27,7 @@ from mcp.server.fastmcp import FastMCP
 
 # ============ 配置 ============
 
-DB_PATH = os.environ.get("DB_PATH", os.path.join(os.path.dirname(__file__), "plant.db"))
+DB_PATH = os.environ.get("DB_PATH", "/opt/render/project/src/buckets/plant.db")
 
 DREAM_API_KEY = os.getenv("DREAM_API_KEY", "")
 DREAM_MODEL = "deepseek-chat"
