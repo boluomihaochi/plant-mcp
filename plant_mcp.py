@@ -478,5 +478,4 @@ async def my_garden() -> str:
 
 if __name__ == "__main__":
     init_db()
-    port = int(os.environ.get("PORT", 8765))
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=port)
+mcp.run(transport="sse")
